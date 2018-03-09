@@ -1,12 +1,68 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>prof-it-client-vue</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="author" content="Profit-GROUP" />
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>ProfIT-GROUP</title>
+
+  <!-- Royal Preloader CSS -->
+  <link href="/static/tmp/css/royal_preloader.css" rel="stylesheet">
+
+  <!-- jQuery Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <!-- Royal Preloader -->
+  <script type="text/javascript" src="/static/tmp/js/royal_preloader.min.js"></script>
+  <script type="text/javascript">
+    Royal_Preloader.config({
+      mode:           'number',
+      showProgress:   false,
+      background:     '#fff'
+    });
+  </script>
+
+  <!-- Stylesheets -->
+  <!--<link href="/static/tmp/css/bootstrap.min.css" rel="stylesheet">-->
+  <link href="/static/tmp/css/ionicons.min.css" rel="stylesheet">
+  <link href="/static/tmp/css/pe-icon-7-stroke.css" rel="stylesheet">
+  <link href="/static/tmp/css/magnific-popup.css" rel="stylesheet">
+  <link href="/static/tmp/css/style.css" rel="stylesheet" title="main-css">
+</head>
+<body class="body-static-navbar royal_preloader">
+
+<!-- Preloader -->
+<div id="royal_preloader"></div>
+<div id="app"></div>
+
+<!-- Javascript Files -->
+<!--<script type="text/javascript" src="/static/tmp/js/bootstrap.min.js"></script>-->
+<script type="text/javascript" src="/static/tmp/js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="/static/tmp/js/form-validator.min.js"></script>
+<script type="text/javascript" src="/static/tmp/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="/static/tmp/js/scrollreveal.min.js"></script>
+<script type="text/javascript">
+  /* ---- Portfolio Isotope ---- */
+  $(document).ready(function(){
+    var $grid = $('.grid').isotope({
+      layoutMode: 'masonry'
+    });
+    $('.filter-button-group').on('click', 'li', function() {
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({
+        filter: filterValue
+      });
+    });
+    $(".filter-button-group").each(function(t, e) {
+      var i = $(e);
+      i.on("click", "li", function() {
+        i.find(".active").removeClass("active"), $(this).addClass("active")
+      })
+    });
+  });
+</script>
+<script type="text/javascript" src="/static/tmp/js/main.js"></script>
+</body>
 </html>
