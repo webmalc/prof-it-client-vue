@@ -299,6 +299,10 @@ export default {
 }
 </script>
 
-<style lang="css">
-@import '../assets/css/main.css';
+<style>
+  @import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+  @import '../../node_modules/ionicons/dist/css/ionicons.css';
+  @import '../../node_modules/pe7-icon/dist/dist/pe-icon-7-stroke.css';
+  @import '../../static/tmp/css/magnific-popup.css';
+  @import '../../static/tmp/css/style.css';
 </style>
