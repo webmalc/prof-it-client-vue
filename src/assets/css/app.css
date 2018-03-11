@@ -1,3 +1,5 @@
-/*@import '../../../node_modules/bootstrap/dist/css/bootstrap-theme.css';*/
-/*@import '../../../node_modules/bootstrap/dist/css/bootstrap.css';*/
-@import '../../../static/tmp/css/bootstrap.min.css';
+@import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '../../../node_modules/ionicons/dist/css/ionicons.css';
+@import '../../../node_modules/pe7-icon/dist/dist/pe-icon-7-stroke.css';
+@import '../../../static/tmp/css/magnific-popup.css';
+@import './style.css';

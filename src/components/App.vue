@@ -1,75 +1,5 @@
 <template><div id="app">
-    <!-- Begin Header -->
-    <header>
-
-      <!-- Begin Navigation -->
-      <nav class="navbar navbar-default navbar-spacing-top-fixed">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand scroll-top" href="#">Rolla</a><span class="navbar-tagline hidden-sm">Multi</span>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Home</span></a>
-                <ul class="dropdown-menu dropdown-menu-first">
-                  <li><a href="multipage-top-default.html">Default</a></li>
-                  <li><a href="multipage-top-slider-image.html">Image Slider</a></li>
-                  <li><a href="multipage-top-text-rotater.html">Rotate</a></li>
-                  <li><a href="multipage-top-slider-transparent.html">No BG Slider</a></li>
-                </ul><!-- /.dropdown items -->
-              </li><!-- /.dropdown -->
-              <li><a href="multipage-services.html">Services</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Pages</span></a>
-                <ul class="dropdown-menu dropdown-menu-first">
-                  <li><a href="multipage-about.html">About</a></li>
-                  <li><a href="multipage-pricing.html">Pricing</a></li>
-                  <li><a href="multipage-experience.html">Experience</a></li>
-                </ul><!-- /.dropdown items -->
-              </li><!-- /.dropdown -->
-              <li><a href="multipage-team.html">Team</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Work</span></a>
-                <ul class="dropdown-menu dropdown-menu-first">
-                  <li class="dropdown-submenu">
-                    <a tabindex="-1" href="#">Masonry &nbsp;<span class="ion-ios-arrow-right"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a tabindex="-1" href="multipage-portfolio-masonry-2col.html">2 Columns</a></li>
-                      <li><a tabindex="-1" href="multipage-portfolio-masonry-3col.html">3 Columns</a></li>
-                      <li><a tabindex="-1" href="multipage-portfolio-masonry-4col.html">4 Columns</a></li>
-                    </ul><!-- /.dropdown sub items -->
-                  </li><!-- /.dropdown sub -->
-                  <li class="dropdown-submenu">
-                    <a href="#">Regular &nbsp;<span class="ion-ios-arrow-right"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a tabindex="-1" href="multipage-portfolio-aligned-2col.html">2 Columns</a></li>
-                      <li><a tabindex="-1" href="multipage-portfolio-aligned-3col.html">3 Columns</a></li>
-                      <li><a tabindex="-1" href="multipage-portfolio-aligned-4col.html">4 Columns</a></li>
-                    </ul><!-- /.dropdown sub items -->
-                  </li><!-- /.dropdown sub -->
-                </ul><!-- /.dropdown sub holder -->
-              </li><!-- /.dropdown -->
-              <li><a href="multipage-contact.html">Contact</a></li>
-              <li class="btn-navbar"><a href="#"><span class="btn btn-primary btn-lg">Buy Now</span></a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container -->
-      </nav><!-- /.nav -->
-      <!-- End Navigation -->
-
-    </header>
-    <!-- End Header -->
-
+  <header-item></header-item>
     <!-- Begin Jumbotron -->
     <div id="home" class="jumbotron">
       <div class="container">
@@ -290,6 +220,7 @@
 <script>
 import HeaderItem from '@/components/HeaderItem'
 import FooterItem from '@/components/FooterItem'
+
 export default {
   name: 'App',
   components: {
@@ -300,9 +231,5 @@ export default {
 </script>
 
 <style>
-  @import '../../node_modules/bootstrap/dist/css/bootstrap.css';
-  @import '../../node_modules/ionicons/dist/css/ionicons.css';
-  @import '../../node_modules/pe7-icon/dist/dist/pe-icon-7-stroke.css';
-  @import '../../static/tmp/css/magnific-popup.css';
-  @import '../../static/tmp/css/style.css';
+@import './../assets/css/app.css';
 </style>

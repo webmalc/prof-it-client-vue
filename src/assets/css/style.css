@@ -283,163 +283,6 @@ a:focus {
     letter-spacing: 2px;
 }
 
-/* =Navigation
--------------------------------------------------------------- */
-.navbar-default {
-    background-color: #fff;
-}
-
-.navbar-default .navbar-brand {
-    color: #373737;
-	font-family: 'Montserrat';
-	letter-spacing: -4.5px;
-	text-transform: uppercase;
-}
-
-.navbar-default .navbar-nav > li > a {
-    color: #adadad;
-    line-height: 50px;
-    font-size: 14px;
-    text-transform: uppercase;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
-    transition: all 0.8s ease;
-}
-
-.navbar-brand {
-    height: 80px;
-    font-size: 36px;
-    line-height: 50px;
-}
-
-.navbar-tagline {
-    line-height: 80px;
-}
-
-.navbar {
-    min-height: 80px;
-    margin-bottom: 0;
-    border: none;
-}
-
-.navbar-spacing-top-fixed {
-    padding-top: 50px;
-}
-
-.navbar-spacing-top-static {
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-.navbar-switch {
-    padding-top: 0;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    -webkit-box-shadow: -1px 4px 18px -3px rgba(0,0,0,0.07);
-    -moz-box-shadow: -1px 4px 18px -3px rgba(0,0,0,0.07);
-    box-shadow: -1px 4px 18px -3px rgba(0,0,0,0.07);
-}
-
-.navbar-toggle {
-    margin-top: 23px;
-    margin-bottom: 23px;
-    border-radius: 0;
-}
-
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #474747;
-    border-color: #474747;
-}
-
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    color: #555;
-    background-color: #fff;
-}
-
-.btn-navbar a {
-    line-height: 45px;
-}
-
-.dropdown-menu > li > a {
-    display: block;
-    padding: 12px 16px 10px 16px;
-    clear: both;
-    font-weight: 400;
-    line-height: 1.42857;
-    color: #FFF;
-    font-size: 11px;
-    text-transform: uppercase;
-    border-bottom: 1px solid #474747;
-    font-weight: 300;
-}
-
-.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
-    color: rgba(255, 255, 255, 0.70);
-    text-decoration: none;
-    background-color: transparent;
-}
-
-.dropdown-menu {
-    background-color: #3C3C3C;
-    border: 1px solid rgba(66,67,66,1);
-    border-radius: 0;
-    min-width: 150px;
-    box-shadow: none;
-    padding: 0;
-}
-
-.dropdown-menu-first:before {
-    position: absolute;
-    top: -7px;
-    right: 14px;
-    display: inline-block;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid #3c3c3c;
-    border-left: 7px solid transparent;
-    border-bottom-color: #3c3c3c;
-    content: '';
-}
-
-.dropdown-submenu {
-    position: relative;
-}
-
-.dropdown-submenu > .dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-left: -1px;
-    margin-top: -1px;
-}
-
-.dropdown-submenu:hover > .dropdown-menu {
-    display: block;
-}
-
-.dropdown-submenu:hover > a:after {
-    border-left-color: #fff;
-}
-
-.dropdown-submenu.pull-left {
-    float: none;
-}
-
-.dropdown-submenu.pull-left > .dropdown-menu {
-    left: -100%;
-    margin-left: 10px;
-}
-
-.dropdown-menu>.active > a, .dropdown-menu > .active>a:focus, .dropdown-menu > .active > a:hover {
-    background-color: #4a4a4a;
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    color: #555;
-    background-color: #fff;
-}
 
 /* =Jumbotron
 -------------------------------------------------------------- */
@@ -529,7 +372,7 @@ a:focus {
 }
 
 .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
-    color: #fff;   
+    color: #fff;
     background-color: #5c5c5c;
     border-color: #5c5c5c;
 }
@@ -617,11 +460,11 @@ a:focus {
     font-size: 32px;
 }
 
-.carousel-control.right { 
+.carousel-control.right {
     background-image: none;
 }
 
-.carousel-control.left { 
+.carousel-control.left {
     background-image: none;
 }
 
@@ -959,7 +802,7 @@ blockquote .small, blockquote footer, blockquote small {
 
 /* =Contact
 -------------------------------------------------------------- */
-#map { 
+#map {
     height: 400px;
 }
 
