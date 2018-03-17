@@ -4,7 +4,6 @@ import App from './components/App'
 // import router from './router'
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 require('bootstrap')
-
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

@@ -1,4 +1,5 @@
 $(function () {
+
   /* ---- contact form ---- */
   $("#contactForm").validator().on("submit", function(event) {
     if (event.isDefaultPrevented()) {
@@ -51,38 +52,6 @@ $(function () {
     }
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
   }
-
-  /* ---- our work gallery ---- */
-  $('#work').magnificPopup({
-    delegate: 'a.zoom',
-    type: 'image',
-    fixedContentPos: false,
-    removalDelay: 300,
-    mainClass: 'mfp-fade',
-    gallery: {
-      enabled: true,
-      preload: [0,2]
-    }
-  });
-
-  /* ---- popup image ---- */
-  $('.popup-img').magnificPopup({
-    type: 'image',
-    removalDelay: 300,
-    mainClass: 'mfp-fade'
-  });
-
-  /* ---- popup video ---- */
-  $(document).ready(function() {
-    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-      disableOn: 700,
-      type: 'iframe',
-      mainClass: 'mfp-fade',
-      removalDelay: 160,
-      preloader: false,
-      fixedContentPos: false
-    });
-  });
 
   /* ---- nav smooth scroll ---- */
   $(document).ready(function() {

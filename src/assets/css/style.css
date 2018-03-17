@@ -284,30 +284,6 @@ a:focus {
 }
 
 
-/* =Jumbotron
--------------------------------------------------------------- */
-.jumbotron {
-    padding-top: 120px;
-    padding-bottom: 150px;
-    margin-bottom: 0;
-    background-color: #fff;
-}
-
-.jumbotron p {
-    font-size: 16px;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-
-.top-content {
-    padding-left: 30px;
-    border-left: 2px solid #e8e8e8;
-}
-
-.jumbotron-down-arrow {
-	font-size: 24px;
-}
-
 /* =Buttons
 -------------------------------------------------------------- */
 .btn {
@@ -619,92 +595,6 @@ blockquote .small, blockquote footer, blockquote small {
     text-transform: uppercase;
 }
 
-/* =Work
--------------------------------------------------------------- */
-.grid-item {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.grid-item:hover .overlay {
-    opacity: 1;
-    -webkit-box-shadow: -1px 4px 32px -3px rgba(0,0,0,0.13);
-    -moz-box-shadow: -1px 4px 32px -3px rgba(0,0,0,0.13);
-    box-shadow: -1px 4px 32px -3px rgba(0,0,0,0.13);
-}
-
-.grid-item .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255,.94);
-    opacity: 0;
-    -webkit-transition: .3s all;
-    -o-transition: .3s all;
-    transition: .3s all;
-}
-
-.grid-item .overlay .inner-overlay {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    padding: 0 30px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.grid-item .overlay .inner-overlay h4 {
-    letter-spacing: 2px;
-    color: #474747;
-    margin: 0 0 5px;
-    text-transform: uppercase;
-}
-
-.grid-item .overlay .inner-overlay span {
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: #a9a9a9;
-    font-style: italic;
-}
-
-.list-work-filter {
-    display: inline-block;
-    margin-left: 20px;
-    margin-bottom: 0;
-}
-
-.list-work-filter > li {
-    font-size: 14px;
-    padding-right: 12px;
-    padding-left: 12px;
-    margin-right: 10px;
-    height: 30px;
-    line-height: 31px;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
-    transition: all 0.8s ease;
-}
-
-.list-work-filter > li:last-child {
-    margin-right: 0;
-}
-
-.list-work-filter > li:hover {
-    background-color: #fff;
-    color: #474747;
-    cursor: pointer;
-}
-
-.list-work-filter > li.active {
-    background-color: #fff;
-    color: #474747;
-}
-
 /* =Experience
 -------------------------------------------------------------- */
 #experience h3 {
@@ -800,70 +690,8 @@ blockquote .small, blockquote footer, blockquote small {
     color: #333;
 }
 
-/* =Contact
--------------------------------------------------------------- */
-#map {
-    height: 400px;
-}
 
-.form-control {
-    height: 40px;
-    font-size: 16px;
-    line-height: 1.7;
-    border: none;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
 
-.form-control:focus {
-    color: #8e8e8e;
-    outline: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-#contact .has-error .form-control {
-    border-color: #2F2F2F;
-}
-
-#contact .has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
-    color: #bfbfbf;
-    font-size: 12px;
-    font-weight: 400;
-}
-
-#contact .has-error .form-control:focus {
-    border-color: #2F2F2F;
-}
-
-#msgSubmit {
-    font-family: 'Roboto', sans-serif;
-    text-transform: initial;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-
-/* =Footer
--------------------------------------------------------------- */
-.page-footer {
-    padding: 20px 0;
-    background-color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-#contact-information {
-    background-color: #ebebeb;
-    padding: 100px 0;
-}
-
-#contact-information h5 {
-    color: #686868;
-    font-size: 14px;
-}
 
 /* =Media Queries
 -------------------------------------------------------------- */
