@@ -12,34 +12,70 @@
   <link href="/static/tmp/css/royal_preloader.css" rel="stylesheet">
   <!-- jQuery Files -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <!-- scrollReveal -->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+
   <!-- Royal Preloader -->
   <script type="text/javascript" src="/static/tmp/js/royal_preloader.min.js"></script>
+
   <script type="text/javascript">
     Royal_Preloader.config({
       mode:           'number',
       showProgress:   false,
       background:     '#fff'
     });
+    Royal_Preloader.config({
+      onComplete: function () {
+        triggerReveals()
+      }
+    });
+    if (typeof sr === 'undefined') {
+      window.sr = ScrollReveal({
+        duration: 1600,
+        delay: 50
+      })
+    }
+
+    let triggerReveals = function () {
+      sr.reveal('.bottomReveal', {
+        origin: 'bottom'
+      }).reveal('.leftReveal', {
+        origin: 'left'
+      }).reveal('.rightReveal', {
+        origin: 'right'
+      }).reveal('.topReveal', {
+        origin: 'top'
+      });
+
+      sr.reveal('.rotateBottomReveal', {
+        origin: 'bottom',
+        rotate: { x: 90 }
+      }).reveal('.rotateLeftReveal', {
+        origin: 'left',
+        rotate: { x: 90 }
+      }).reveal('.rotateRightReveal', {
+        origin: 'right',
+        rotate: { x: 90 }
+      }).reveal('.rotateTopReveal', {
+        origin: 'top',
+        rotate: { x: 90 }
+      })
+
+      sr.reveal('.scaleReveal', {
+        origin: 'top',
+        scale: 0.6
+      });
+    }
   </script>
 
-  <!-- Stylesheets -->
-  <!--<link href="/static/tmp/css/ionicons.min.css" rel="stylesheet">-->
-  <!--<link href="/static/tmp/css/pe-icon-7-stroke.css" rel="stylesheet">-->
-  <!--<link href="/static/tmp/css/magnific-popup.css" rel="stylesheet">-->
-  <!--<link href="/static/tmp/css/style.css" rel="stylesheet" title="main-css">-->
 </head>
-<!--<body class="body-static-navbar royal_preloader">-->
-<body class="body-static-navbar">
+<body class="body-static-navbar royal_preloader">
 
 <!-- Preloader -->
 <div id="royal_preloader"></div>
 <div id="app"></div>
 
-<!-- Javascript Files -->
-<!--<script type="text/javascript" src="/static/tmp/js/form-validator.min.js"></script>-->
-<!--<script type="text/javascript" src="/static/tmp/js/jquery.magnific-popup.min.js"></script>-->
-<!--<script type="text/javascript" src="/static/tmp/js/scrollreveal.min.js"></script>-->
-
-<!--<script type="text/javascript" src="/static/tmp/js/main.js"></script>-->
 </body>
 </html>

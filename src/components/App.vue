@@ -13,16 +13,18 @@ import FooterItem from '@/components/FooterItem'
 import ContactsItem from '@/components/ContactsItem'
 import JumbotronItem from '@/components/JumbotronItem'
 import WorkItem from '@/components/WorkItem'
+
 export default {
   name: 'App',
   components: {
-    WorkItem,
+    HeaderItem,
     JumbotronItem,
+    WorkItem,
     ContactsItem,
-    'header-item': HeaderItem,
-    'footer-item': FooterItem
+    FooterItem
   }
 }
+
 </script>
 
 <style>

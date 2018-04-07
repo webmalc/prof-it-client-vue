@@ -160,6 +160,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 require('magnific-popup')
 // http://isotope.metafizzy.co.s3-website-us-east-1.amazonaws.com/extras.html#webpack
 let jQueryBridget = require('jquery-bridget')
@@ -218,7 +219,12 @@ $(function () {
 })
 
 export default {
-  name: 'work-item'
+  name: 'work-item',
+  mounted: function () {
+    this.$nextTick(function () {
+
+    })
+  }
 
 }
 </script>
