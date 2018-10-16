@@ -13,23 +13,27 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand scroll-top" href="#">Rolla</a><span class="navbar-tagline hidden-sm">Multi</span>
+          <a class="navbar-brand scroll-top" href="#">POFIT</a><span class="navbar-tagline hidden-sm">Group</span>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                 aria-expanded="false"><span>Home</span></a>
-              <ul class="dropdown-menu dropdown-menu-first">
-                <li><a href="multipage-top-default.html">Default</a></li>
-                <li><a href="multipage-top-slider-image.html">Image Slider</a></li>
-                <li><a href="multipage-top-text-rotater.html">Rotate</a></li>
-                <li><a href="multipage-top-slider-transparent.html">No BG Slider</a></li>
-              </ul><!-- /.dropdown items -->
+              <router-link :to="{name: 'home'}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Home</router-link>
+              <!--<ul class="dropdown-menu dropdown-menu-first">-->
+                <!--<li><a href="multipage-top-default.html">Default</a></li>-->
+                <!--<li><a href="multipage-top-slider-image.html">Image Slider</a></li>-->
+                <!--<li><a href="multipage-top-text-rotater.html">Rotate</a></li>-->
+                <!--<li><a href="multipage-top-slider-transparent.html">No BG Slider</a></li>-->
+              <!--</ul>&lt;!&ndash; /.dropdown items &ndash;&gt;-->
             </li><!-- /.dropdown -->
-            <li><a href="multipage-services.html">Services</a></li>
+            <!--<li>-->
+              <!--<a href="multipage-services.html">Services</a>-->
+            <!--</li>-->
+
+<!--
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                  aria-expanded="false"><span>Pages</span></a>
@@ -37,33 +41,40 @@
                 <li><a href="multipage-about.html">About</a></li>
                 <li><a href="multipage-pricing.html">Pricing</a></li>
                 <li><a href="multipage-experience.html">Experience</a></li>
-              </ul><!-- /.dropdown items -->
-            </li><!-- /.dropdown -->
-            <li><a href="multipage-team.html">Team</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                 aria-expanded="false"><span>Work</span></a>
-              <ul class="dropdown-menu dropdown-menu-first">
-                <li class="dropdown-submenu">
-                  <a tabindex="-1" href="#">Masonry &nbsp;<span class="ion-ios-arrow-right"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a tabindex="-1" href="multipage-portfolio-masonry-2col.html">2 Columns</a></li>
-                    <li><a tabindex="-1" href="multipage-portfolio-masonry-3col.html">3 Columns</a></li>
-                    <li><a tabindex="-1" href="multipage-portfolio-masonry-4col.html">4 Columns</a></li>
-                  </ul><!-- /.dropdown sub items -->
-                </li><!-- /.dropdown sub -->
-                <li class="dropdown-submenu">
-                  <a href="#">Regular &nbsp;<span class="ion-ios-arrow-right"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a tabindex="-1" href="multipage-portfolio-aligned-2col.html">2 Columns</a></li>
-                    <li><a tabindex="-1" href="multipage-portfolio-aligned-3col.html">3 Columns</a></li>
-                    <li><a tabindex="-1" href="multipage-portfolio-aligned-4col.html">4 Columns</a></li>
-                  </ul><!-- /.dropdown sub items -->
-                </li><!-- /.dropdown sub -->
-              </ul><!-- /.dropdown sub holder -->
-            </li><!-- /.dropdown -->
-            <li><a href="multipage-contact.html">Contact</a></li>
-            <li class="btn-navbar"><a href="#"><span class="btn btn-primary btn-lg">Buy Now</span></a></li>
+              </ul>&lt;!&ndash; /.dropdown items &ndash;&gt;
+            </li>&lt;!&ndash; /.dropdown &ndash;&gt;
+-->
+
+            <!--<li><a href="multipage-team.html">Team</a></li>-->
+            <li><router-link :to="{'name': 'team'}">Team</router-link></li>
+            <!--<li class="dropdown">-->
+              <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"-->
+                 <!--aria-expanded="false"><span>Work</span></a>-->
+              <!--<ul class="dropdown-menu dropdown-menu-first">-->
+                <!--<li class="dropdown-submenu">-->
+                  <!--<a tabindex="-1" href="#">Masonry &nbsp;<span class="ion-ios-arrow-right"></span></a>-->
+                  <!--<ul class="dropdown-menu">-->
+                    <!--<li><a tabindex="-1" href="multipage-portfolio-masonry-2col.html">2 Columns</a></li>-->
+                    <!--<li><a tabindex="-1" href="multipage-portfolio-masonry-3col.html">3 Columns</a></li>-->
+                    <!--<li><a tabindex="-1" href="multipage-portfolio-masonry-4col.html">4 Columns</a></li>-->
+                  <!--</ul>&lt;!&ndash; /.dropdown sub items &ndash;&gt;-->
+                <!--</li>&lt;!&ndash; /.dropdown sub &ndash;&gt;-->
+                <!--<li class="dropdown-submenu">-->
+                  <!--<a href="#">Regular &nbsp;<span class="ion-ios-arrow-right"></span></a>-->
+                  <!--<ul class="dropdown-menu">-->
+                    <!--<li><a tabindex="-1" href="multipage-portfolio-aligned-2col.html">2 Columns</a></li>-->
+                    <!--<li><a tabindex="-1" href="multipage-portfolio-aligned-3col.html">3 Columns</a></li>-->
+                    <!--<li><a tabindex="-1" href="multipage-portfolio-aligned-4col.html">4 Columns</a></li>-->
+                  <!--</ul>&lt;!&ndash; /.dropdown sub items &ndash;&gt;-->
+                <!--</li>&lt;!&ndash; /.dropdown sub &ndash;&gt;-->
+              <!--</ul>&lt;!&ndash; /.dropdown sub holder &ndash;&gt;-->
+            <!--</li>&lt;!&ndash; /.dropdown &ndash;&gt;-->
+            <li><router-link :to="{'name': 'works'}">Works</router-link></li>
+            <li><router-link :to="{'name': 'about'}">About</router-link></li>
+            <li><router-link :to="{'name': 'contacts'}">Contacts</router-link></li>
+            <!--<li class="btn-navbar">-->
+              <!--<a href="#"><span class="btn btn-primary btn-lg">Buy Now</span></a>-->
+            <!--</li>-->
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->

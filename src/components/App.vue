@@ -1,25 +1,23 @@
-<template><div id="app">
-  <header-item></header-item>
-  <jumbotron-item></jumbotron-item>
-  <work-item></work-item>
-  <contacts-item></contacts-item>
-  <footer-item></footer-item>
+<template>
+  <div id="app">
+    <header-item></header-item>
+    <router-view></router-view>
+    <contacts-item></contacts-item>
+    <footer-item></footer-item>
   </div>
 </template>
 
 <script>
-import HeaderItem from '@/components/HeaderItem'
-import FooterItem from '@/components/FooterItem'
-import ContactsItem from '@/components/ContactsItem'
-import JumbotronItem from '@/components/JumbotronItem'
-import WorkItem from '@/components/WorkItem'
+import HeaderItem from './HeaderItem'
+import FooterItem from './FooterItem'
+import ContactsItem from './ContactsItem'
+import Home from './Pages/Home'
 
 export default {
   name: 'App',
   components: {
+    Home,
     HeaderItem,
-    JumbotronItem,
-    WorkItem,
     ContactsItem,
     FooterItem
   }

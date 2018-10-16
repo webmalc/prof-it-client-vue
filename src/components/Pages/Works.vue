@@ -1,6 +1,6 @@
 <template>
   <!-- Begin Work -->
-  <section id="work" class="section-padding-work">
+  <section id="work" class="section-padding-work">asdfsdf
     <div class="container">
       <!-- Title -->
       <div class="row mb50">
@@ -230,91 +230,5 @@ export default {
 </script>
 
 <style scoped>
-
-  /* =Work
-  -------------------------------------------------------------- */
-  .grid-item {
-    position: relative;
-    margin-bottom: 30px;
-  }
-
-  .grid-item:hover .overlay {
-    opacity: 1;
-    -webkit-box-shadow: -1px 4px 32px -3px rgba(0,0,0,0.13);
-    -moz-box-shadow: -1px 4px 32px -3px rgba(0,0,0,0.13);
-    box-shadow: -1px 4px 32px -3px rgba(0,0,0,0.13);
-  }
-
-  .grid-item .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255,.94);
-    opacity: 0;
-    -webkit-transition: .3s all;
-    -o-transition: .3s all;
-    transition: .3s all;
-  }
-
-  .grid-item .overlay .inner-overlay {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    padding: 0 30px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-
-  .grid-item .overlay .inner-overlay h4 {
-    letter-spacing: 2px;
-    color: #474747;
-    margin: 0 0 5px;
-    text-transform: uppercase;
-  }
-
-  .grid-item .overlay .inner-overlay span {
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: #a9a9a9;
-    font-style: italic;
-  }
-
-  .list-work-filter {
-    display: inline-block;
-    margin-left: 20px;
-    margin-bottom: 0;
-  }
-
-  .list-work-filter > li {
-    font-size: 14px;
-    padding-right: 12px;
-    padding-left: 12px;
-    margin-right: 10px;
-    height: 30px;
-    line-height: 31px;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
-    transition: all 0.8s ease;
-  }
-
-  .list-work-filter > li:last-child {
-    margin-right: 0;
-  }
-
-  .list-work-filter > li:hover {
-    background-color: #fff;
-    color: #474747;
-    cursor: pointer;
-  }
-
-  .list-work-filter > li.active {
-    background-color: #fff;
-    color: #474747;
-  }
 
 </style>
